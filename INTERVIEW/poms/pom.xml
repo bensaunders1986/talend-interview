@@ -12,7 +12,7 @@
     <module>code/routines</module>
     <module>jobs/process/strava_0.1</module>
     <module>jobs/process/getathletedata_0.1</module>
-    <module>jobs/process/getathletename_0.1</module>
+    <module>jobs/process/getathlete_0.1</module>
   </modules>
   <properties>
     <talend.project.name>INTERVIEW</talend.project.name>
