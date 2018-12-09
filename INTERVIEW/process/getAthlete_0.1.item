@@ -516,8 +516,6 @@
       <column comment="" key="false" length="-1" name="state" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="country" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="sex" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="premium" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="summit" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="badge_type_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="profile_medium" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="profile" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -538,8 +536,6 @@
         <mapperTableEntries expression="row5.state" name="state" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row5.country" name="country" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row5.sex" name="sex" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row5.premium" name="premium" nullable="true" type="id_Boolean"/>
-        <mapperTableEntries expression="row5.summit" name="summit" nullable="true" type="id_Boolean"/>
         <mapperTableEntries expression="row5.badge_type_id" name="badge_type_id" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row5.profile_medium" name="profile_medium" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row5.profile" name="profile" nullable="true" type="id_String"/>
@@ -645,16 +641,6 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="premium"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="summit"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="badge_type_id"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -702,8 +688,6 @@
       <column comment="" key="false" length="-1" name="state" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="country" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="sex" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="premium" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="summit" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="badge_type_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="profile_medium" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="profile" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -721,8 +705,6 @@
       <column comment="" key="false" length="-1" name="state" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="country" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="sex" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="premium" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="summit" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="badge_type_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="profile_medium" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="profile" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -851,13 +833,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_db626467-707f-4ace-9838-08ad9574b602"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zhusZXHTjW1tiLgqbrvdvobrTb0px1TWN9aixGab0Y3UpLLnb6H4DX0F3go+4ksOVjpd/EaKzOPJ
-+pslMmdtyA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b8423d3f-7413-4cf7-b470-eb58d04a40cc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pgpr375qKV344o4x7Tm3EHydYpjOcFaEXcWbGd8M8me8lGLQpliKQaZ7M4FQO3C/T6xmZt4lTdG5
-MPMmHG3E2g==</DigestValue></Reference></SignedInfo><SignatureValue>HUMxjOGATWJnV9+nOtE+6J5HSYZcA3b7M8c+14kJxEgt7YI6d70enK11tL4a3wEGX36WQLVHaXED
-A/rcmGBkBtVBb+O+nLjEoH83JEY9Wot1qUtOyVKgJVhHtQDJsgoJ6rCCBnXoFg56qGmG/Q5iRfNr
-xh4llw2KHqY0os5m+0UkgRx79x34I719EuXFnusHTce1yYWYLhpx4e79t6/NzKSBYnLEHAhWJ/q4
-89eKik+0JV+1s49rit/o7wTf0gD01NXI57NM4Ttb6tpXZcF0LQZnwt0ADaGq2Q0y/KOZ2fno9zeE
-7R2lwQ+kprqgMTCSkIM7RmT7qCbx56QGTK2znw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f00f394f-f731-473a-bb15-0803d5c28d2b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eSJc4LHQNoqZ9PbC8N166+epmvH7Q0ZYYKHTy8oQxljaotEXXaI7G5nKCdl6bxV8Ofy2B+UdGjfr
+5/WRX2xe4Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_57ae9320-b0fe-4d26-b095-fa66e856e9a4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>v7kAQdWNpOAFnfGjhYL3jCFwGy2lkDbi+ih8TUIjawc5kGl7GJaxTJjGDAFvcGefvLvsDXQVg6IY
+4slR3hp4gQ==</DigestValue></Reference></SignedInfo><SignatureValue>PLsf3VlEC/aJlV2TS1uCDSHKDPTNxwtzd80SDtWVmZjjgFOVawsL1xN+PiKVkoMz8Grkz4JS+Ise
+MxxXy/wahNky4+S74KRax9oTjTnQorN57OvfaddST8kfHd+ygbOUr9nrfPrEFVELdk+21JWP1FBf
+emEejCrGS3lNDdKUrWoBFw+n6lZDsPUNcUV8WIGi5/WCG482FpFiDFPk6xrZhDmBT2iG6kJtPs0C
+AqPRevmyL5UMuhPRZjF+Vn7qdCtphbRIWKIGLZaNCPNcnz65N7HgLQzqplnpWKPIggZdAX+Rc2IO
+j2MbIOCFr1nrgnNmRpou0Hf/P+hEv0sbtNflYA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -881,4 +863,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b8423d3f-7413-4cf7-b470-eb58d04a40cc" Target="#_db626467-707f-4ace-9838-08ad9574b602"><Timestamp>2018-12-09 10:39:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_57ae9320-b0fe-4d26-b095-fa66e856e9a4" Target="#_f00f394f-f731-473a-bb15-0803d5c28d2b"><Timestamp>2018-12-09 10:43:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
