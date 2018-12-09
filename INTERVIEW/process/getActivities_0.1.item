@@ -302,6 +302,22 @@
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_lat"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_long"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_lat"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_long"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
       <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
@@ -330,6 +346,14 @@
       <elementValue elementRef="QUERY" value="&quot;timezone&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="utc_offset"/>
       <elementValue elementRef="QUERY" value="&quot;utc_offset&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_lat"/>
+      <elementValue elementRef="QUERY" value="&quot;start_latlng[0]&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_long"/>
+      <elementValue elementRef="QUERY" value="&quot;start_latlng[1]&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_lat"/>
+      <elementValue elementRef="QUERY" value="&quot;end_latlng[0]&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_long"/>
+      <elementValue elementRef="QUERY" value="&quot;end_latlng[1]&quot;"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -353,6 +377,10 @@
       <column comment="" key="false" length="-1" name="start_date_local" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="timezone" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="utc_offset" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="start_lat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="start_long" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="end_lat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="end_long" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="true" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -368,6 +396,10 @@
       <column comment="" key="false" length="-1" name="start_date_local" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="timezone" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="utc_offset" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="start_lat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="start_long" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="end_lat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="end_long" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -413,6 +445,14 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="utc_offset"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_lat"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_long"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_lat"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_long"/>
+      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -432,6 +472,10 @@
       <column comment="" key="false" length="-1" name="start_date_local" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="timezone" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="utc_offset" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="start_lat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="start_long" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="end_lat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="end_long" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-32" posY="128">
@@ -722,6 +766,18 @@
       <elementValue elementRef="TRACE_COLUMN" value="start_date_local"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="start_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="end_lat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="end_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="start_lat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
@@ -746,13 +802,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6f0aaea7-830e-41a3-b3a9-e9552410a2a5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YdNPCTDFGPdhVmzCFtm43tvqTllSKaAL5Y00oJV9a2eg1db9rb8rjpd+d4zveQ7H7G3J9EOXHfiU
-9BqjYXIFyg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5741b067-2a82-446f-8007-2e6a73019159"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VttyhL5K4Uo/g5JCIbRRMJoy89vOVw2kfCem4D6GYN1+cWiWg5PF0qW0TGFUbeqsveKljoCG6yGt
-j6+dpDekBg==</DigestValue></Reference></SignedInfo><SignatureValue>VYpMO9rZYIf6ilmscwLfylfQUHm87VkC8oZ6VPJ/frjmz5PGqkDpkzL+rVnHykaJk8LfTA8lIgO0
-gqzhFBak+WN0uuOyMNH5iCVPglkzqE+MsiBf8CJtZMBT6X9sK3x/DzG9XaFSpPM9GBJKqz414a2k
-DSzsXAMy+QbPPMkF/v6ljkPW+ubXStBG/EB05OZtLpQRGUZIOA6+HNxIzyt4KQlSIbSyF51FHI0L
-T2QmnbeDVWezAUry3PCzX04vj41xz5myEN+8eaNEz97uoIF9KsCX5xNDZL6zpNu2MSVz7utpXh00
-UtdN7nEG2jKKU8I/h0a05sn/cIj9UZcc5zOOcw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9652c1b9-3461-4360-9c80-db5362002033"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>e9Hcigi11Zm1sBV5lkdx8HiVenz2giZoJpu3VyrYSvvLqNQELgfHieJ2cVg7umMt+GucR0lcz6Hx
+9ppPyHU8Zw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ad2b91ed-9a8d-455b-a5f5-8f2d5af0a062"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>feIIeGt/1vGsj23X2ZqeosBfEGERuADrOvSgRfxI01oKwN9M6mMO/WlYxLWjluCZ59WoG4CPD/9K
+u0bwCCBi2g==</DigestValue></Reference></SignedInfo><SignatureValue>GzCSsMUBmfjlhoLVOjPUX5vJHOhIM9E4jCSU/kvgg3AtVe52ywP3ou/5GzL2PDAkd5w8ofU7JCgz
+/B1nGlm8+xPXD4y6WN69tZKRt0g7OWgmzUf8rMAR28RvwuhlaGSW8nJUbl/a4+CFWHW9dgO1KtIl
+I0sR2Ug3rm0NYNDLX35mfzNCWv7PyIpZUbq2P0xtgRz5YhTHF5UhX+e4XRsHgPVMH1ZpgxM385Iv
+MJa9zDT4u+JP/gQv9IgNicdHXN5SPIrtm0umo6jgrT/oZ3OktIFBI77qSbk7O/OIJN6yacSSR7/3
+NOibGgyO07SQ+gS4dqN4rQyQDUvwX0FXP2Uy1g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -776,4 +832,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5741b067-2a82-446f-8007-2e6a73019159" Target="#_6f0aaea7-830e-41a3-b3a9-e9552410a2a5"><Timestamp>2018-12-09 13:21:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ad2b91ed-9a8d-455b-a5f5-8f2d5af0a062" Target="#_9652c1b9-3461-4360-9c80-db5362002033"><Timestamp>2018-12-09 13:23:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
