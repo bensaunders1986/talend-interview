@@ -490,7 +490,7 @@
       <column comment="" key="false" length="-1" name="comment_count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="photo_count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="summary_polyline" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="commute" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="commute" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="gear_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="from_accepted_tag" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="average_speed" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
@@ -526,7 +526,7 @@
       <column comment="" key="false" length="-1" name="comment_count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="photo_count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="summary_polyline" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="commute" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="commute" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="gear_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="from_accepted_tag" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="average_speed" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
@@ -653,7 +653,7 @@
       <column comment="" key="false" length="-1" name="comment_count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="photo_count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="summary_polyline" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="commute" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="commute" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="gear_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="from_accepted_tag" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="average_speed" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
@@ -762,7 +762,7 @@
         <mapperTableEntries name="comment_count" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="photo_count" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="summary_polyline" nullable="true" type="id_String"/>
-        <mapperTableEntries name="commute" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="commute" nullable="true" type="id_String"/>
         <mapperTableEntries name="gear_id" nullable="true" type="id_String"/>
         <mapperTableEntries name="from_accepted_tag" nullable="true" type="id_Boolean"/>
         <mapperTableEntries name="average_speed" nullable="true" type="id_Float"/>
@@ -1168,13 +1168,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_be60aa95-9479-46d1-9d76-92ec374116d5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ETzUws0wfaGaFnOUjl6GOA5UCUIKbunN8/6J5z4zfgjrAETCE5uBYjCBtgGBinxLvKsZn9/nZ6FT
-xKNHtfZ7bQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c8cc6149-2bfa-4e46-bb6b-bacad4bb6825"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3PAtCzsDOLFTKuvoeR3HwnOeFkcr2xt4iERIc7Lb7CorULUlDcRS7nkuf9xL1Sx6BqO1Z1df/ouk
-xBfL67uatQ==</DigestValue></Reference></SignedInfo><SignatureValue>aFjLxVf5nAmC4Rke89HcLOBrTwWJZ7UY30i9K4eExmLmZRFMq9rK5jFHdMpvIIGPGG19nXTfLEP9
-bENVtUJsIRcsbtfExYUd19ym9XRV7sGkf8yFPPk8/nmilbT4JMqPxiJym9G+aVZsH4DhjVSnqaUG
-hyvKoW4uBErDT9NSHDDEnNNVVQaxEGmDn6H3GXzWXCdXyf8jDn2QPBbwajDRKt9IRXzcK0EBAopG
-fef8by7twd4KSzCovt9/HFrgSEruNyft6upDsbyflG7Orh89nD5O+OuVYknTyIVs8+jO2i8Ly1XH
-QvCzbzHjqq5PUM3xr8/FpmQe8Ol/NBleZveCsA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6ed51ef8-6af1-4d92-a8cc-c24700842c77"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>g0ez/HR4nnLh4JljV8T6bOAFIupNd/M1tfutDUBlhFF2dX8QkxnfClnXNrHuGBSaWwFqwlx/xHyC
+e2aevIedww==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9a974903-1c0b-4479-806b-0ab21a391d75"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zjab4NaHATU151VqHFMkGfvF29Moxcpq7w5k34V9S3ZFlu/o4cMaYsZSYY/AQAF2+g8zZIPkodoo
+Bst1uZj6nA==</DigestValue></Reference></SignedInfo><SignatureValue>LULh5Zii053vihzF8kr9GVRX0WaOOgL7bfEGNZ8JBUJR+qqHdPBwhrb1K0OHwSPrMrSDRAZN/zwR
+gAnef6WFAfa3D19JoT684QxSJa6kJU1oz4HK+dnpsF9DxXxDviuE15qbWATdgSBHJKFT3gtsL3KR
+o7tENIEBMhUQTsd58GD8sPNFjEmTjBsLqyZWIfmC/eWrJd4JFvgMzKtLL+3xhzm3gVwCe99aIHFB
+3NcPDRiTo09wNmmbpznoKctwU+6ZejLrPUAUMnSnYsDkMkqfctC2p65zWaRXt5teMZpwwqNQQyDl
+E9ogEn3UWS8K+MqxExKwggeCmy/kbcGwERTEag==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1198,4 +1198,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c8cc6149-2bfa-4e46-bb6b-bacad4bb6825" Target="#_be60aa95-9479-46d1-9d76-92ec374116d5"><Timestamp>2018-12-09 12:57:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9a974903-1c0b-4479-806b-0ab21a391d75" Target="#_6ed51ef8-6af1-4d92-a8cc-c24700842c77"><Timestamp>2018-12-09 12:59:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
