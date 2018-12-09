@@ -15,13 +15,14 @@
     <module>jobs/process/getathlete_0.1</module>
     <module>jobs/process/getactivities_0.1</module>
     <module>jobs/process/getweather_0.1</module>
+    <module>jobs/process/iterateweatherdata_0.1</module>
   </modules>
   <properties>
     <talend.project.name>INTERVIEW</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
