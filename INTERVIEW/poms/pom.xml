@@ -15,8 +15,8 @@
     <module>jobs/process/getathlete_0.1</module>
     <module>jobs/process/getactivities_0.1</module>
     <module>jobs/process/getweather_0.1</module>
-    <module>jobs/process/iterateweatherdata_0.1</module>
     <module>jobs/process/copy_of_getweather_0.1</module>
+    <module>jobs/process/getdemodata_0.1</module>
   </modules>
   <properties>
     <talend.project.name>INTERVIEW</talend.project.name>
