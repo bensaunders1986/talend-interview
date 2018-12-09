@@ -346,10 +346,6 @@
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="commute"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="gear_id"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
@@ -436,8 +432,6 @@
       <elementValue elementRef="QUERY" value="&quot;photo_count&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="summary_polyline"/>
       <elementValue elementRef="QUERY" value="&quot;map.summary_polyline&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="commute"/>
-      <elementValue elementRef="QUERY" value="&quot;commute&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="gear_id"/>
       <elementValue elementRef="QUERY" value="&quot;gear_id&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="from_accepted_tag"/>
@@ -490,7 +484,6 @@
       <column comment="" key="false" length="-1" name="comment_count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="photo_count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="summary_polyline" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="commute" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="gear_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="from_accepted_tag" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="average_speed" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
@@ -526,7 +519,6 @@
       <column comment="" key="false" length="-1" name="comment_count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="photo_count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="summary_polyline" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="commute" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="gear_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="from_accepted_tag" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="average_speed" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
@@ -603,8 +595,6 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="summary_polyline"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="commute"/>
-      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="gear_id"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="from_accepted_tag"/>
@@ -653,7 +643,6 @@
       <column comment="" key="false" length="-1" name="comment_count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="photo_count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="summary_polyline" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="commute" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="gear_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="from_accepted_tag" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="average_speed" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
@@ -762,7 +751,6 @@
         <mapperTableEntries name="comment_count" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="photo_count" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="summary_polyline" nullable="true" type="id_String"/>
-        <mapperTableEntries name="commute" nullable="true" type="id_String"/>
         <mapperTableEntries name="gear_id" nullable="true" type="id_String"/>
         <mapperTableEntries name="from_accepted_tag" nullable="true" type="id_Boolean"/>
         <mapperTableEntries name="average_speed" nullable="true" type="id_Float"/>
@@ -1168,13 +1156,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6ed51ef8-6af1-4d92-a8cc-c24700842c77"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>g0ez/HR4nnLh4JljV8T6bOAFIupNd/M1tfutDUBlhFF2dX8QkxnfClnXNrHuGBSaWwFqwlx/xHyC
-e2aevIedww==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9a974903-1c0b-4479-806b-0ab21a391d75"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zjab4NaHATU151VqHFMkGfvF29Moxcpq7w5k34V9S3ZFlu/o4cMaYsZSYY/AQAF2+g8zZIPkodoo
-Bst1uZj6nA==</DigestValue></Reference></SignedInfo><SignatureValue>LULh5Zii053vihzF8kr9GVRX0WaOOgL7bfEGNZ8JBUJR+qqHdPBwhrb1K0OHwSPrMrSDRAZN/zwR
-gAnef6WFAfa3D19JoT684QxSJa6kJU1oz4HK+dnpsF9DxXxDviuE15qbWATdgSBHJKFT3gtsL3KR
-o7tENIEBMhUQTsd58GD8sPNFjEmTjBsLqyZWIfmC/eWrJd4JFvgMzKtLL+3xhzm3gVwCe99aIHFB
-3NcPDRiTo09wNmmbpznoKctwU+6ZejLrPUAUMnSnYsDkMkqfctC2p65zWaRXt5teMZpwwqNQQyDl
-E9ogEn3UWS8K+MqxExKwggeCmy/kbcGwERTEag==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_64605a58-9fd8-4628-a887-507a1b737e97"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>j3eff1QfNpbDaVilmyTnXlTQLD+iRuFiCzHrM12yZ+2QOU/TBwSbBa1tlfJdDU+a0MzP4/z51J13
+agwBrgId0Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b1597797-ef69-41d9-b89a-01ac8932fbd9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>poH7OPtcFalZzZPeposaF5QkyPOEegHE5121xVfU3qDqaFQTv38EUbiwsiHcXK7Ee3t9pmeUEEEC
+n5d/NtzHOg==</DigestValue></Reference></SignedInfo><SignatureValue>4ZbOvY0GJjQ3aBuRos2P6z+U0t6amLK/ns1cOXM+Xf+D8NpKWvheS1yQw36m3CHCV6BcTbyy+r/1
+qWK8c7WbAZ2b5uzB4Fqerk1gLL4k4UvpfsDU1cbd063YL1RNTp4AVVq2EJ9JcpElLw04Z2zEU3MU
+b1NoSjM8GKk0E8wpR/r43uyuDleBB+GqjisPk9ndxSy9u7ZF71AmOqYXJCiA264EZuB3dRl+F58Y
+XpOF7+V+OlfEYyUyi1e3Oz5lM2qWdCyV0aM+0joXnvNhEQJLGrrZ3Ti3dva0Khkz7qQGEdFPkPmZ
+ocobfkqaUr3UNF+05l5uvBEmOrMw+GB3CQ1aEA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1198,4 +1186,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9a974903-1c0b-4479-806b-0ab21a391d75" Target="#_6ed51ef8-6af1-4d92-a8cc-c24700842c77"><Timestamp>2018-12-09 12:59:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b1597797-ef69-41d9-b89a-01ac8932fbd9" Target="#_64605a58-9fd8-4628-a887-507a1b737e97"><Timestamp>2018-12-09 13:01:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
