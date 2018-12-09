@@ -617,7 +617,6 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -663,7 +662,7 @@
       <column comment="" defaultValue="" key="false" length="-1" name="visibility" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="weather" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="new java.util.Date((long)(row1.time*1000))" name="date" nullable="true" type="id_Date"/>
@@ -690,7 +689,7 @@
         <mapperTableEntries expression="row1.pressure" name="pressure" nullable="true" type="id_Float"/>
         <mapperTableEntries expression="row1.wind_speed" name="wind_speed" nullable="true" type="id_Float"/>
         <mapperTableEntries expression="row1.wind_gust" name="wind_gust" nullable="true" type="id_Float"/>
-        <mapperTableEntries expression="new java.util.Date((long)(row1.wind_gust_time*1000)) " name="wind_gust_time" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.wind_gust_time ==null?null:new java.util.Date((long)(row1.wind_gust_time*1000)) " name="wind_gust_time" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row1.wind_bearing" name="wind_bearing" nullable="true" type="id_Float"/>
         <mapperTableEntries expression="row1.cloud_cover" name="cloud_cover" nullable="true" type="id_Float"/>
         <mapperTableEntries expression="row1.uv_index" name="uv_index" nullable="true" type="id_Float"/>
@@ -733,7 +732,6 @@
   </node>
   <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value="tDBConnection_1"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
@@ -1188,7 +1186,6 @@
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLogRow_4" offsetLabelX="0" offsetLabelY="0" source="tLogRow_4" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="weather" lineStyle="0" metaname="weather" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
@@ -1279,7 +1276,6 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="weather"/>
   </connection>
   <subjob>
@@ -1287,18 +1283,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3e188bae-1904-401d-8e78-12757d4ea6ad"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rQ3pq4QYXz/mPEK0Q8A+hCP2jdl8TS6bTtZ8A0ShAhYuB7gmNgNqV8Gy+uwQ51pFCl9yHO/Ff+bE
-se/5QkwduA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cf1110ae-aac7-4c95-a5f1-362faf6e3bb1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gOt0k0sDUrEXxbGslSo4W6GokjyDp/5iNEBkHgN2qX3W26vBEqLU9vshcykMKj1v2vShibA0HTPJ
-dhUxOAbh0A==</DigestValue></Reference></SignedInfo><SignatureValue>pjNGjixnUvH32SWEy+0Hfu72P/ctLlOAn3Csga34nY+lVAPRpIQpHb6SK5xDHN2tPi+6az/SdDQe
-ekvTUisr0Pq2bvEmO/uQbKYES2BTYtZYhl7QWwroEl8dv91NRlBxQQAN+8N/ehsRFF+dTZGllloi
-X5qV/Ugila/6rqpit0mzblLkR/0S3nopw3w0kdj/cE0kSZMZk244FNKGa6nj+cygq+jRBNTx8KK+
-U/z/3Y3G/vjEqn/H3kUx4hVEmL3zIPh1m539+VfGyKJ+z8j31RX1V1V2WevWBrXE3JUAmh2Vr838
-6j1UrJuvluNLFrpiJoGC2oe7ExQJz4VqqMgJLw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_71415eef-6c32-45dc-a53b-a2fae050f8bf"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YzvRnQiCKuxamrfLAtG3VpHMc/y9yxx3PZPqQTTTFZzCaw+XFORW0z2kFqN7gYLBzjf+hda+qpnO
+1AE/89b/Jw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_01ff915e-b6b6-40e7-9048-a5f7c7fb5b16"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zsvKtnR6KWY7LrR3eAOnsJZi5O+iei/cOdadB8B7BR4gTyxDEhYNub1uYdv5LNmRDt4sXoPYOBm+
+EYgXEB4iDg==</DigestValue></Reference></SignedInfo><SignatureValue>fKDqPi7L1TaJMFqrr6eelOFDFz629X2nYAtSZw80XGzEizMlGVHH1qwqhdNfVv9eLIgZugBSok9e
+oKdJf8q2CS3kNg44hu3X0GYqwWJtY5XBcUwe89DduVEFpfjO1JgdlA11chC1eUtsLZb4QOfJhcOm
+eCIsmMSKd8aUssePsLrsETuADt8F3zzXEOfWrepxrPGavYRNQs31ke3x+fRGaHUU19JupK5+tMtX
+4l5tInVI84o8Hpt/ZnfCwQyHDWTocVWJqF7OBYPLx8FX+jmQjrUjvq0DVxq/YLv4Hj/+JRwiHYXb
+/UnEuO26bLjhUteRzZvpxIyg320yuRb2SCjaxQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1322,4 +1313,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cf1110ae-aac7-4c95-a5f1-362faf6e3bb1" Target="#_3e188bae-1904-401d-8e78-12757d4ea6ad"><Timestamp>2018-12-09 17:41:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_01ff915e-b6b6-40e7-9048-a5f7c7fb5b16" Target="#_71415eef-6c32-45dc-a53b-a2fae050f8bf"><Timestamp>2018-12-09 17:48:25</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
