@@ -77,6 +77,16 @@
       <artifactId>getWeather</artifactId>
       <version>0.1.0</version>
     </dependency>
+    <dependency>
+      <groupId>org.example.interview.job</groupId>
+      <artifactId>getAthlete</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.interview.job</groupId>
+      <artifactId>getActivities</artifactId>
+      <version>0.1.0</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>${talend.job.finalName}</finalName>
