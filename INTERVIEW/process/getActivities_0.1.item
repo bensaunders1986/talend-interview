@@ -274,14 +274,6 @@
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="start_date"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="start_date_local"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="utc_offset"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
@@ -360,10 +352,6 @@
       <elementValue elementRef="QUERY" value="&quot;id&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="upload_Id"/>
       <elementValue elementRef="QUERY" value="&quot;upload_id&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="start_date"/>
-      <elementValue elementRef="QUERY" value="&quot;start_date&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="start_date_local"/>
-      <elementValue elementRef="QUERY" value="&quot;start_date_local&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="utc_offset"/>
       <elementValue elementRef="QUERY" value="&quot;utc_offset&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="start_lat"/>
@@ -412,8 +400,6 @@
       <column comment="" key="false" length="-1" name="total_elevation_gain" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="upload_Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="start_date" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="start_date_local" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="utc_offset" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="start_lat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="start_long" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
@@ -438,8 +424,6 @@
       <column comment="" key="false" length="-1" name="total_elevation_gain" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="upload_Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="start_date" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="start_date_local" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="utc_offset" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="start_lat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="start_long" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
@@ -487,10 +471,6 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="upload_Id"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="start_date"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="start_date_local"/>
-      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="utc_offset"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="start_lat"/>
@@ -535,8 +515,6 @@
       <column comment="" key="false" length="-1" name="total_elevation_gain" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="upload_Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="start_date" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="start_date_local" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="utc_offset" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="start_lat" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="start_long" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
@@ -1497,13 +1475,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a1e015ab-0f34-4d5c-8097-9c45fb5268de"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rVqzQ1uSv5LXL5GwCeazWypHy6m/Gl0Szbe0Fxtjn57eDZysjFDGx+Ozs2u5+/4lwk75tY1Obs/v
-h7btsSMHww==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_42afb83e-8977-4963-8a9c-8e3c95fdb0ba"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dUq6F9ymkYZto7iH303hHvtPKM7iwGeKo0x3S53Szx2llT8cCuNp2jmDWHlcmmk+ZsoOyqpt1eu3
-jkU+6rRDow==</DigestValue></Reference></SignedInfo><SignatureValue>lZfUXDRkNcCxapFMe77k22xTco7V/6voCnOZY30vkicW+pi69yHhg4b5VLD3eJ5xPcyBkG5JnhEH
-u+vne+C+sDZCwJDg0F9YYEnvj41eHecvZ/pg3eqAhCoJVAykzdrY8V24vOW3giuT0uySdB7k5Vjf
-hkX7l6tmzlxMxZ3o8sEXgzeGpyAnndHnDMp2fNcEbZE5KSug2HBeNdh0viGr3sCb2lZV6GI0gych
-qEaGmf6meONZKYIvVd/x6HvhzUGBmOLrg0nOjTIsgK37PT6sUYkaL/jOG9wp/P6owbgcD+nC8tSo
-I7B7inlWfvzbaTdWZQo91nhXCi14gLUCgI307g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_19e07203-3a94-41f6-8e79-180380045dca"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HIz+2SN4o2Lx9NyJD6zBvSQA6PBsvQDALlVn5tkeacwgGso/4OYVK+0Ng5qwrFhqTjY47TVI7Yb7
+hEx4QNHI+A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b0acb39b-1608-416d-9705-c3f74752dbeb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tw4ClTWwBGH9cApzSKuI1OoUsoUO9z2m516wxI5rnFCuLEyVHuOU7WcKO4efwHPweEHsa9ENJQag
+wl8j/BDVvA==</DigestValue></Reference></SignedInfo><SignatureValue>0CtnnTt1YK15cHY7K7E7RWgSALilBgnkvL9dTJrkTKG2HAfjfkCM+ZNf+E8dAxxY81fJd2jWdeZk
+i5adyrGFj2sCzZ9Fm9m187tTEQrSoSDmH5iozh3oRpeQK5T9CQEELl+RkWW6afbmgIFROhEA46no
+x8yCdcNHrCi/RzzR041VSA/Yxoard2XyZ8XiBQOi8EqjI8W94PYuDLY5L1Ygefw59QTsZlepjlaA
+PWCHJGLAEFgV/GYB95vekZ9+hR1ykPv/1xlsfBn62OL2NGrDtJ+1yipAFGkXG/X6eIcmIm0DqJzg
+NKDPT/w2bfiXy7Dem1Gg1araLE5bDPYvaO7DOw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1527,4 +1505,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_42afb83e-8977-4963-8a9c-8e3c95fdb0ba" Target="#_a1e015ab-0f34-4d5c-8097-9c45fb5268de"><Timestamp>2018-12-09 13:08:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b0acb39b-1608-416d-9705-c3f74752dbeb" Target="#_19e07203-3a94-41f6-8e79-180380045dca"><Timestamp>2018-12-09 13:09:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
