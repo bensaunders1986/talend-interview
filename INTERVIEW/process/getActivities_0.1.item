@@ -286,13 +286,13 @@
     <elementParameter field="TEXT" name="LABEL" value="extractActivityDetails"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tExtractJSONFields_2">
-      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="athlete_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="commute" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="athlete_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="commute" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
@@ -329,7 +329,7 @@
     <elementParameter field="TEXT" name="LABEL" value="logActivities"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_4">
-      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="athlete_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="commute" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
@@ -1288,13 +1288,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ac44642c-2148-44da-927f-110f9cca958a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iwvRywcXraA4eiaG/9he3fhWNdPVtT2L0r0d1YVt51AeljmFemo7ru5GOHArUQY3l8+2Sr5RddHi
-m6ZZ/ly7YA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_109ad290-09d1-4c7f-b4e5-06380fe649e2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wsdK3Rx+WswMZAwHVFlfLNWvZBsIRyn+YlQpb+iDWBuFVOPMOZf/M+j2P6zeeQTYbYB7mgof9YXb
-x8gRegc9lw==</DigestValue></Reference></SignedInfo><SignatureValue>JwNWbtMq0fr0HU/2SNJl0xq621SlEzoZNID0bPmgso6do3r+6n9BGGhfbaVKktRLvUUMGJo50rgY
-POhjuEK2+dCkKoh4DuB9Eok2AYs/EWiENSeu1RoBK7+IGixXbzsMotDIoLl0ayZmde/GqO8Rte+E
-jqUkM5t51cDvi2O7ic9YIOfUmSqT43BYRZRD3/XFoJkKy6wp+PJLOWNA8Cy5bB50Fxfv01TvkUTq
-LcS/ypAObqdY2/5lvUzn/SdidJbfn29J34foIb8h6ocHmZN8CPurMzwlr71hmyPxBE4n4m7vYrnI
-D8VcFufdKM4wBy+ogZonw6nACNnYWXlba58EGA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_dd66097a-d491-4ec7-b16b-ba24f7e3ab05"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OqTMbmKH8ZBTac6qdVjcyths+QPT/4W3zVh2GKf+s+gkN3hEkUm3BjN+gFjNL0rZuKy1DJ0o+JDi
+dRf2J8qEQg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_02938651-ead8-480f-8bd7-07d58cb96cd8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2XH+rWCZ9esPTn7iVgPnXtw4kxFOGg94EGc9nviZy5WpCrirE7Gu/J4WiBSiIKFWVoBPixBL3+yn
+zKc57E03qw==</DigestValue></Reference></SignedInfo><SignatureValue>KSImI2RvKjWUmtYaCl05qJZW9aUQwF154Qc3IDmnnF5Js2wEhjGUqEgrEmktnYftNI9nYr7ytl0d
+3bvKbwkB9OmKl4BvjTJNhgfFpxNMNEQZ9QBZTDWGLlkhG3L52FYkftzSLR/iWMz15lMBQF0CIkNe
+V4a/MZRVF752IwJ4WFLD2S8tdWdD7bei07PD65ZuNRBqP8KFOl1Rew2jHVuXKZPvfJHEne3nl9M+
+aukBuFcaV+xD6Gw/bKwPKXD73XZQH9gMF9B0UpGyM2K9D+TRXuTCdGQsaNlsUtbfNqggY/W5wrxf
+m6qZohmaEhXYx8/Xh2dnnGucrBw81nNZwXmZ+g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1318,4 +1318,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_109ad290-09d1-4c7f-b4e5-06380fe649e2" Target="#_ac44642c-2148-44da-927f-110f9cca958a"><Timestamp>2018-12-09 13:12:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_02938651-ead8-480f-8bd7-07d58cb96cd8" Target="#_dd66097a-d491-4ec7-b16b-ba24f7e3ab05"><Timestamp>2018-12-09 13:12:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
