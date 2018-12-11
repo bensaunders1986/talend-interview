@@ -664,6 +664,7 @@
       <column comment="" defaultValue="" key="false" length="-1" name="uv_index" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="uv_index_time" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="visibility" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="daylight" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -699,6 +700,7 @@
         <mapperTableEntries expression="row1.uv_index" name="uv_index" nullable="true" type="id_Float"/>
         <mapperTableEntries expression="new java.util.Date((long)(row1.uv_index_time*1000)) " name="uv_index_time" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row1.visibility" name="visibility" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="(row1.sunset_time-row1.sunrise_time)*3600" name="daylight" nullable="true" type="id_Float"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="time" nullable="true" type="id_Long"/>
@@ -914,6 +916,11 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="daylight"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
     </elementParameter>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
@@ -952,6 +959,7 @@
       <column comment="" defaultValue="" key="false" length="-1" name="uv_index" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="uv_index_time" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="visibility" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="daylight" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="activity" name="REJECT">
       <column comment="" key="true" length="-1" name="date" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
@@ -984,6 +992,7 @@
       <column comment="" defaultValue="" key="false" length="-1" name="uv_index" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="uv_index_time" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="visibility" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="daylight" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -1278,6 +1287,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="precip_intensity_max_time"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="daylight"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="weather"/>
@@ -1287,13 +1299,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3ccf83c8-4bcb-4004-a087-70fa5fae856c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jM8BWcjkxNd6DN5u+Gn8hO0fRCHzECZwtraFl9Xf83dcwdO37yQLvEPCLo/BFSdf2y8EgS9NFb5s
-sgm7iUzcbg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b8d5efaf-4a3d-434c-9d42-7e2f1fca49bc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NVYk9rNeNXgT3E0hmTwSGoBrbWqzyCsKxhrQ6A40jgEZE4feWfHWrBWD2pbdK59ydHgZmf6bvjeJ
-paYmASey3g==</DigestValue></Reference></SignedInfo><SignatureValue>e9df2tWNqd9qLCm+aIFoHF0WhP7Vi1JAXVxPJAkU37GSLE1J37jj3A7tEYCzmxtfoTQ/dQyQUcO2
-Ko+fwBfHAkqxrhPJbypCMRXmzvn3xDWidZ6id16JUwmp5xfHr5tAXu/UGtL6E50s7m5ONsC/rz/X
-/4QsoGmhb0CbtwzS93+PsEUhPIcFqnvaCHiDhI0bHqnrnmGwFhrmhWDnKx2Fd63J3Pb3DyS7H/Cp
-vS2A+4/Njp5B8YNwSy8PC229bXEOyorAppiuSnb/bjrRuXRjJt6epXG7TiC1qVtG3BTyoDLz0j6z
-hS/r8872vz6OQAJRM8tcglITMynq77XqXO1t/A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_318c7916-d6c7-4fd8-b68d-69559e445f0d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vLZJe6sf/xwuvr2GcIa6C6fie0UojBqUxGLBa5Tif36hFO+qELyn842Sk/SeVpas+mkWRMPRUdlh
+Z/oUSI8E2g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d30c61cc-378b-478a-b29d-b413e85fa35b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pJ6UqQ3vEYxYqQunYWgEAH0u0pfPu70H/EBlVnG/oyKojq0WMWjHhJlvqk4wBIN1rb8KbLxkOs30
+U1+T9rtRxw==</DigestValue></Reference></SignedInfo><SignatureValue>BNUFcXYe9pPAZgmdV0c1ZlfrGV48bLGcWXBcRwWj7EUmG/Z8ylxRZI/eDokA64fBg0ERdI32RSIL
+jngFzgFW38evnpAJ9RpWTNIbcu6CwFZ6bzLSJFiaKVEYMeNQqCWdHT6SOg94AKe7Ag3JZGj8nzz+
+VQCqqMDBp3mTq11sO187giisgM2BY5XbEFmNK0LKc60ZoaJQRNCGXtCkVW6t+vTRPpIV/5i1getF
+jzPAKlKnXFv85IPGHmCRLTf9baOy2Pg1uQSALeAr1h1InwxJ5ln0x0HoiNiLphaZ+XsR077wDasY
+Tmpw43hg9kt3/nZK/eIJGbY4JJiyoKGMOwD2eA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1317,4 +1329,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b8d5efaf-4a3d-434c-9d42-7e2f1fca49bc" Target="#_3ccf83c8-4bcb-4004-a087-70fa5fae856c"><Timestamp>2018-12-09 18:11:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d30c61cc-378b-478a-b29d-b413e85fa35b" Target="#_318c7916-d6c7-4fd8-b68d-69559e445f0d"><Timestamp>2018-12-11 18:40:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
